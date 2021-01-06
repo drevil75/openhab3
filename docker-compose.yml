@@ -12,9 +12,9 @@ services:
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
       - "/etc/timezone:/etc/timezone:ro"
-      - "/var/docker/openhab3/addons:/openhab/addons"
-      - "/var/docker/openhab3/conf:/openhab/conf"
-      - "/var/docker/openhab3/userdata:/openhab/userdata"
+      - "addons:/openhab/addons"
+      - "conf:/openhab/conf"
+      - "userdata:/openhab/userdata"
     environment:
       OPENHAB_HTTP_PORT: "8080"
       OPENHAB_HTTPS_PORT: "8443"
@@ -32,7 +32,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
-      - /var/docker/openhab3/database:/var/lib/mysql
+      - database:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=MeinOHrootPW # Datenbank Passwort wählen
       - MYSQL_PASSWORD=MeinOHPW # Datenbank Passwort wählen, wird bei der Nextcloudinstallation abgefragt
