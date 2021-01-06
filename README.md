@@ -21,7 +21,7 @@ Mit dem docker-compose.yml-File werden Docker-Container mit Openhab3 und Maria-D
      
       
 ### openhab3 -Persistence-Konfig:
-Database URL: jdbc:mariadb://192.168.0.50:33306/openhab3
-Database User: openhab3         # Hier den Usernamen aus dem docker-compose.yml eintragen
-Database Password: MeinOHPW     # Hier das Passwort aus dem docker-compose.yml eintragen
+    Database URL: jdbc:mariadb://192.168.0.50:33306/openhab3
+    Database User: openhab3         # Hier den Usernamen aus dem docker-compose.yml eintragen
+    Database Password: MeinOHPW     # Hier das Passwort aus dem docker-compose.yml eintragen
 
